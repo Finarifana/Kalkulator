@@ -19,9 +19,9 @@ function processInput() {
     addMessage(userInput, 'user');
     document.getElementById('userInput').value = '';
 
-    if (userInput.includes('GCD') || userInput.includes('PBB')) {
+    if (/gcd|pbb/i.test(userInput)) {
         handleGCDInput(userInput);
-    } else if (userInput.includes('LCM') || userInput.includes('KPK')) {
+    } else if (/lcm|kpk/i.test(userInput)) {
         handleLCMInput(userInput);
     } else {
         addMessage('Silakan masukkan pertanyaan atau bilangan yang valid.', 'bot');
@@ -52,7 +52,8 @@ function handleLCMInput(input) {
 
 // Fungsi untuk mengekstrak bilangan dari input pengguna
 function extractNumbers(input) {
-    return input.match(/\d+/g).map(Number);
+    const matches = input.match(/\d+/g);
+    return matches ? matches.map(Number) : [];
 }
 
 // Fungsi untuk menambahkan pesan ke chatbox
