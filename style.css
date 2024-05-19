@@ -44,6 +44,7 @@ h1 {
 
 .message.user {
     justify-content: flex-end;
+    flex-direction: row-reverse; /* Tambahkan baris ini */
 }
 
 .message img {
@@ -54,8 +55,8 @@ h1 {
 }
 
 .message.user img {
-    margin-left: 0;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0;
 }
 
 .message p {
