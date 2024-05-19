@@ -47,8 +47,8 @@ h1 {
 }
 
 .message img {
-    width: 60px; /* Perbesar ukuran gambar */
-    height: 60px; /* Perbesar ukuran gambar */
+    width: 80px; /* Perbesar ukuran gambar */
+    height: 80px; /* Perbesar ukuran gambar */
     border-radius: 50%;
     margin-right: 10px;
 }
