@@ -63,7 +63,7 @@ function addMessage(text, sender) {
     messageElement.classList.add('message', sender);
 
     const imgElement = document.createElement('img');
-    imgElement.src = sender === 'bot' ? 'bot.png' : 'user.png';
+    imgElement.src = sender === 'bot' ? 'bot.gif' : 'user.gif';
     messageElement.appendChild(imgElement);
 
     const textElement = document.createElement('p');
